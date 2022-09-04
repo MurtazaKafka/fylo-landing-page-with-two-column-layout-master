@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: .7em 1.3em;
+    font-size: .85em;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 1.2em;
+}
+
+h1, h2, h3, a{
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.hook p {
+    margin: 2em auto;
+}
+
+.illustration {
+    width: 85%;
+}
+
+.two {
+    margin: 4em auto;
+}
+
+.desc {
+    text-align: start;
+}
+
+section {
+    padding: 0 2em;
+    margin-top: 5em;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header a:hover,
+header a:focus {
+    color:hsla(243, 87%, 12%, 0.671);
+    border-bottom: 1px solid hsla(243, 87%, 12%, 0.671);
+    padding-bottom: 3px;
+}
+
+button:hover,
+button:focus {
+    background-color: hsla(192, 93%, 58%, 0.418);
+    color: hsl(224, 96%, 38%);
+}
+
+footer a:hover,
+footer a:focus {
+    color: rgba(255, 255, 255, 0.651);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+    padding-bottom: 3px;
+}
+
+.logo {
+    margin-top: .8em;
+    width: 5.8em;
+}
+
+form {
+    display: grid;
+    gap: .3em;
+}
+
+input, button {
+    padding: .7em 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+input {
+    border: black solid 1px;
+}
+
+button {
+    transition: 350ms;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+}
+
+.desc {
+    text-justify: distribute-all-lines;
+}
+
+.more {
+    color: hsl(170, 45%, 43%);
+    border-bottom: hsl(170, 45%, 43%) solid 1px;
+    display: inline-block;
+    padding-bottom: .8em;
+}
+.more a {
+    color: hsl(170, 45%, 43%);
+}
+
+.quote {
+    width: 2em;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%/0.1);
+    box-shadow: 1px 1px 10px hsl(255, 2%, 62%);
+    padding: 2em;
+    text-align: start;
+    font-size: smaller;
+}
+
+.portrait {
+    display: flex;
+    font-size: .5em;
+}
+
+.pic {
+    display: block;
+    width: 6em;
+    height: 6em;
+    margin-right: 2em;
+    border-radius: 50%;
+}
+
+.access {
+    background-color: hsl(238, 22%, 44%);
+    color: rgba(255, 255, 255, 0.863);
+    padding: 2rem;
+}
+
+.access h2 {
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.icon {
+    padding-right: 1em;
+}
+
+footer {
+    padding: 2em;
+    text-align: start;
+    font-size: smaller;
+    background-color: hsl(243, 87%, 12%);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.863);
+}
+
+footer svg {
+    fill: white;
+}
+
+.query, .fylo-done, .learn-more {
+    padding: 1em 0;
+}
+
+@media (min-width: 35em) {
+    .hook, .details, .access  {
+        display: flex;
+    }
+
+    .fylo-register, .words, .hook img, .two, .accessing, .access-form {
+        width: 50%;
+    }
+
+    button, input {
+        padding: .7em auto;
+    }
+    
+    form {
+        padding-top: 2em;
+        padding-left: 2em;
+        gap: 2em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
